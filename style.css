@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(36, 36, 36, 0.5), #000), url(images/image2loginback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav .logo {
+    width: 160px;
+    height: auto;
+    cursor: pointer
+}
+
+nav .logo img {
+    width: 100%;
+
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: rgb(206, 12, 12);
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-left: 7px;
+    cursor: pointer;
+
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.lang-btn i {
+    margin-left: 6px;
+}
+
+/* ........header section text........ */
+.header-text {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    line-height: 58px;
+    font-weight: 800;
+}
+
+.header-text h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.header-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header-text .email {
+    display: flex;
+
+    gap: 6px;
+    order: 0;
+    outline: 0;
+    align-items: center;
+    margin: auto;
+
+}
+
+.email input {
+    padding: 16px 40px;
+    outline: none;
+    border: 1px solid grey;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 4px;
+    background: rgba(36, 36, 36, 0.8);
+}
+.email__input__message {
+    font-size: 15px;
+    position: absolute;
+    left:-100px;
+    color: rgb(252, 241, 241);
+    margin-top: 140px;
+
+    width: 100%; 
+}
+
+.email button {
+    background: rgb(211, 22, 22);
+    padding: 12px 25px;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    font-size: 22px;
+    color: #fff;
+
+}
+
+.email button i {
+    margin-left: 8px;
+}
+
+hr {
+    background: rgb(66, 65, 65);
+    width: 100%;
+    height: 7px;
+    border: 0;
+    outline: 0;
+}
+
+/* .......body-section......... */
+.container {
+    width: 100%;
+    padding: 50px 0
+}
+
+.body-section {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: auto;
+    height: 520px;
+}
+
+.text-col h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.text-col p {
+    font-size: 20px;
+
+}
+
+.img-col {
+    position: relative;
+}
+
+.img-col img {
+    width: 500px;
+    position: relative;
+    z-index: 10
+}
+
+.img-col video {
+    position: absolute;
+    width: 400px;
+    top: 52px;
+    right: 70px;
+}
+
+
+.faq {
+    padding: 1rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.faq__title {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.8;
+}
+
+.accordion__list {
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-row-gap: 1rem;
+    font-size: 2rem;
+}
+
+.accordion {
+    --accordion-padding: 1.8rem;
+    --accordion-right-padding: 6rem;
+}
+
+.accordion__question {
+    background-color: #1a1818;
+    color: #fff;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: var(--accordion-padding);
+    padding-right: var(--accordion-right-padding);
+    margin-bottom: 1px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.accordion__question:after {
+    content: "+";
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: var(--accordion-right-padding);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.accordion.active .accordion__question:after {
+    content: "-";
+}
+
+.accordion__answer {
+    background-color: #1a1818;
+    border: none;
+    font-size: 20px;
+    padding: var(--accordion-padding);
+    display: none;
+    width: 100%
+}
+
+.accordion.active .accordion__answer {
+    display: block;
+}
+
+.accordion__question:hover {
+    background: #383535;
+    
+}
+
+.faq-footer .header-text {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* ......footer...... */
+
+.footer {
+    width: 100%;
+    padding: 50px 12% 20px;
+}
+
+.footer .row {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 20px 0;
+
+}
+
+.footer .row .col a {
+    display: block;
+    color: #888181;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 550;
+}
+.footer .row .col a:hover {
+  
+    color: #ebe0e0;
+    
+}
+
+.footer h2 {
+    font-size: 18px;
+    color: #ada9a9;
+    margin-bottom: 30px;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #919191;
+    margin: 20px;
+}
+
+/* ..........Media query for small screen........ */
+@media only screen and (max-width: 850px) {
+
+    .header {
+        width: 100%;
+        height: auto;
+    }
+
+    nav .logo {
+        width: 100px;
+    }
+
+    button {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    .header-text {
+        margin-top: 12%;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text h3,
+    .header-text {
+        font-size: 18px;
+    }
+
+    .email button {
+        font-size: 16px;
+
+    }
+
+    .header-text .email {
+        flex-direction: column;
+
+    }
+
+    .email input {
+        width: 100%;
+    }
+
+    .body-section {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+         text-align: center;
+    }
+
+    .second {
+        flex-direction: column-reverse;
+    }
+    .body-section .text-col h2
+    {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+
+.faq__title {
+    text-align: center;
+    font-size: 2rem;
+   
+}
+.accordion {
+    --accordion-padding: 1rem;
+  
+}
+.accordion__question {
+   
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    margin-left: -20px;
+    
+}
+.accordion__question:after {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+
+.accordion__answer {
+  
+    font-size: 17px;
+    width: 100%;
+    margin-left: -20px;
+}
+.faq-footer
+{
+    width:80%;
+    margin: auto;
+}
+.footer .row{
+    grid-template-columns: repeat(2,1fr);
+}.email__input__message {
+    font-size: 15px;
+    position: absolute;
+    left:10px;
+    color: rgb(252, 241, 241);
+    margin-top: 160px;
+
+    width: 100%; 
+}
+
+}

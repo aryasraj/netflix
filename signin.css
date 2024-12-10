@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+    .box1 {
+        height: 707px;
+        width: 500px;
+        background-color: brown;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 48px 68p
+    }
+
+}
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 10px 8%;
+    background: linear-gradient(to top, rgba(36, 36, 36, 0.5), #111111a8), url(image2loginback.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav .logo {
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+}
+
+nav .logo img {
+    width: 100%
+}
+
+
+.container {
+    width: 100%;
+    height: 600px;
+    background-color: #000;
+}
+
+.box1 {
+    height: 620px;
+    width: 450px;
+   
+    position: absolute;
+   
+    top: 50%;
+   
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+   
+    padding: 48px 68px;
+
+    margin-top: 47px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.email {
+
+    margin-top: 22px;
+    width: 307px;
+    height: 50px;
+    background-color: rgba(26, 25, 25, 0.7);
+    color: #fff;
+    border-radius: 4px;
+    border: solid 1px;
+    border-color: grey;
+    padding-left: 10px;
+}
+
+.pass {
+    width: 307px;
+    height: 50px;
+    background-color: rgba(26, 25, 25, 0.7);
+    color: #fff;
+    margin-top: 17px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: grey;
+    padding-left: 10px;
+}
+
+.email::placeholder,
+.pass::placeholder {
+    color: #aaa;
+    opacity: 1;
+    font-size:16px;
+}
+
+.signin {
+    color: #fff;
+}
+
+.sub_btn {
+    height: 40px;
+    width: 320px;
+    background-color: rgba(255, 0, 0, 0.863);
+    color: #fff;
+    margin-top: 17px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0);
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 550;
+    align-items: center;
+}
+.h1
+{
+color:grey;
+margin-left: 146px;
+margin-top: 10px;
+}
+.sign-btn
+{
+
+    height: 40px;
+    width: 320px;
+    background: transparent;
+    background-color: rgba(100, 94, 94, 0.7);
+    color: #fff;
+    margin-top: 17px;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0);
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 550;
+    align-items: center;
+}
